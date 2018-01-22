@@ -20,6 +20,7 @@ attr_accessor :total, :discount, :items
     if discount > 0
       self.total = total - discount
     end
+    self.total
   end
 
 end
