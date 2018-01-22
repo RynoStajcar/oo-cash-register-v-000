@@ -13,7 +13,7 @@ attr_accessor :total, :discount, :items, :last_transaction
     quantity.times do
       items << title
     end
-    
+
   end
 
 
