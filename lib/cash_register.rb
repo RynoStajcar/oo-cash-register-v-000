@@ -16,8 +16,7 @@ attr_accessor :total, :discount, :items, :last_transaction
   end
 
   def apply_discount(title, price)
-    total_price = price - self.discount
-    total_price
+    self.total = self.add_item - self.discount
   end
 
 end
