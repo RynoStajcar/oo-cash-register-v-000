@@ -13,8 +13,10 @@ attr_accessor :total, :discount, :items, :last_transaction
     quantity.times do
       items << title
     end
-
   end
 
+  def apply_discount(title, price)
+    total_price = price - self.discount
+  end
 
 end
