@@ -1,3 +1,4 @@
+require.pry
 class CashRegister
 
 attr_accessor :total, :discount, :items
@@ -16,6 +17,7 @@ attr_accessor :total, :discount, :items
   end
 
   def apply_discount
+    binding.pry
     if discount > 0
       self.total = total - discount
     end
